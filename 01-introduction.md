@@ -1,7 +1,7 @@
 <p align="center"><a href="https://university.redis.com" target="_blank"><img src="https://prod-amc-bucket.s3.amazonaws.com/customer_files/2_redis-university-reversedRGB.png" alt="Redis University" /></a></p>
 <p align="center">Redis Developer Certification Walkthrough notes</p>
 
-# Redis Introduction *
+# Redis Introduction
 
 If you’re familiar with relational databases, you’ll no doubt have written SQL queries to relate data between tables. Redis is a type of database that’s commonly referred to as No SQL or non-relational. In Redis, there are no tables, and there’s no database-defined or -enforced way of relating data in Redis with other data in Redis.
 
