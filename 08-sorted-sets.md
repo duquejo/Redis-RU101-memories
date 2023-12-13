@@ -15,7 +15,7 @@ NESTING, HASHES, LISTS, etc.. are NOT ALLOWED.
 
 **SORTED SETS can have duplicated SCORES but not the same VALUES, that’s because Redis performs a LEXIGRAPHICALLY comparison between them. So If you executes a `ZRANGE` command, it will return the alphabetic order between values excluding duplicated scores.**
 
-Use Cases
+### Use Cases
 
 - Priority queues
 - Low-latency leaderboards
@@ -37,8 +37,8 @@ Use Cases
 - ZCOUNT: `ZCOUNT key min max` Counts the number of elements between a range of SCORES.
 - ZREM: `ZREM key value [value ...]` removes one or more element VALUES from a SET.
 - ZREMRANGEBYLEX: Lexicographically
-- ZREMRANGEBYRANK: Position (index)
-- ZRAMRANGEBYSCORE: Score
+- ZREMRANGEBYRANK: ZREMRANGEBYRANK: Removes all elements in the sorted set stored at `key` with rank between `start` and `stop`. Both `start` and `stop` are `0` -based indexes with `0` being the element with the lowest score. These indexes can be negative numbers, where they indicate offsets starting at the element with the highest score. For example: `-1` is the element with the highest score, `-2` the element with the second highest score and so forth.
+- ZRAMRANGEBYSCORE: `ZREMRANGEBYSCORE key min max` Removes one or more element by SCORE between min and max (inclusive).
 - ZINTERSTORE: `ZINTERSTORE destination numkeys key [key ...] [WEIGHTS weight [weight]] [AGGREGATE SUM|MIN|MAX]`
 - ZUNIONSTORE: `ZUNIONSTORE destination numkeys key [key ...] [WEIGHTS weight [weight]] [AGGREGATE SUM|MIN|MAX]`
 - ZDIFFSTORE: `ZDIFFSTORE destination numkeys key [key ...]`
