@@ -20,5 +20,7 @@
 - [Patterned Pub/Sub](13-patterned-pub-sub.md)
 - [Geospatial](14-geospatial.md)
 - [Lua Scripting](15-lua.md)
+- [Streams](16-streams.md)
+- [Redis Time Series](17-redis-time-series.md)
 
 Earned Certification Link: https://university.redis.com/certificates/54ea19db671d4b858a0f2047105ebceb
